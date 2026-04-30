@@ -1,34 +1,39 @@
 ---
 layout: about
-title: about
+title: Accueil
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: >
+  Médecin Allergologue · Chercheur · SFA · EAACI
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: yanis.jpeg
+  image_circular: false
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+news: true        # affiche la section Nouveautés automatiquement
+selected_papers: true
+social: true
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Interne en Allergologie à l'AP-HP, je me consacre
+à la compréhension et au traitement des maladies allergiques, avec un
+intérêt particulier pour l'intelligence artificielle et l'analyse de
+données appliquées à la clinique.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Mon parcours est double. Après deux ans de médecine, j'ai effectué une césure pour me former à la recherche. Sur le plan quantitatif, j’ai réalisé un Master 1 à l'École Polytechnique — équivalent à la 3ème année du cycle ingénieur - en double parcours biologie et bioinformatique, puis le Master 2 d’informatique de Sorbonne Université, en Bioinformatique et Modélisation (mention très bien). En parallèle, j’ai suivi le master Chimie et Sciences du Vivant de l'Université PSL, avec des enseignements principalement dispensés à l'ENS de Paris (mention très bien), pour acquérir une compréhension moléculaire des phénomènes biologiques. Je suis ensuite revenu en médecine et ai intégré  l’internat d'Allergologie à Paris.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Cette double formation me permet d'aborder l'allergologie avec des
+outils que peu de cliniciens maîtrisent : modélisation statistique,
+machine learning, analyse de données à grande échelle.
+Ma formation en chimie me permet par ailleurs d'aborder l'allergie à son niveau le
+plus fondamental : la structure des molécules. 
+
+L'allergologie clinique génère des données riches et diverses — informations cliniques, tests cutanés, dosages d'IgE, etc —, ce qui en fait un terrain idéal pour l'analyse de données. Je travaille actuellement au développement de pipelines  pour exploiter ces données à grande échelle. Mes précédents travaux ont été publiés dans *Cell* et *Nature Communications*.
+
+Je suis membre du groupe de travail "Données et Intelligence Artificielle" de
+la Société Française d'Allergologie (SFA), et membre junior de
+la taskforce "Angioedema in Pregnancy" de l’EAACI.
+
+Je suis actuellement disponible pour des collaborations scientifiques.
+
+[Disponible pour des collaborations scientifiques, des interventions ou des échanges avec les médias. → Page Médias & Contact/contact/)]: # 
