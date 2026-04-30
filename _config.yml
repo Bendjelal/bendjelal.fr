@@ -74,7 +74,7 @@ bing_site_verification:
 # -----------------------------------------------------------------------------
 
 blog_name: Blog
-blog_description: 
+blog_description:
 permalink: /blog/:year/:title/
 lsi: false
 

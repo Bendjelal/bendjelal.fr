@@ -50,24 +50,23 @@ Cette classification est surtout pertinente pour les réactions retardées (type
 
 - **Cluster III** : groupes C et D1, molécules halogénées et méthylées en C16 — capacité de sensibilisation la plus faible (Baeck, Chemelle, Rasse et al., 2011).
 
-{% include figure.liquid 
-   path="assets/img/blog/classes.png" 
-   alt="classes" 
-   caption="Quelques exemples de corticoïdes" 
-   class="img-fluid rounded z-depth-1 mx-auto d-block" 
+{% include figure.liquid
+   path="assets/img/blog/classes.png"
+   alt="classes"
+   caption="Quelques exemples de corticoïdes"
+   class="img-fluid rounded z-depth-1 mx-auto d-block"
    width="70%" %}
 
 ## 1.4. Estérification et excipients
 
 Pour améliorer leur solubilité, certains corticoïdes sont estérifiés avec des groupes hydrophiles (succinate, phosphate). Ces formes estérifiées se comportent comme des entités moléculaires distinctes sur le plan allergique : l'allergie peut porter sur le complexe corticoïde-ester et non sur l'une des deux molécules isolément (Angel-Pereira et al., 2014 ; Walker et al., 2010). L'archétype est la méthylprednisolone succinate (Solumédrol®).
 
-{% include figure.liquid 
-   path="assets/img/blog/ester.png" 
-   alt="ester" 
-   caption="Corticoïdes et estérification" 
-   class="img-fluid rounded z-depth-1 mx-auto d-block" 
+{% include figure.liquid
+   path="assets/img/blog/ester.png"
+   alt="ester"
+   caption="Corticoïdes et estérification"
+   class="img-fluid rounded z-depth-1 mx-auto d-block"
    width="60%" %}
-
 
 # 2. Allergie aux corticoïdes : généralités
 
@@ -163,11 +162,11 @@ La dermatite de contact systémique (systemic contact dermatitis, SCD) survient 
 
 Les patients atteints de SCD sont souvent polysensibilisés à des molécules de plusieurs classes, correspondant au profil 2 de la classification de Baeck (allergie au squelette stéroïdien). Ils nécessitent une évaluation approfondie de leur profil de tolérance (Baeck & Goossens, 2012).
 
-{% include figure.liquid 
-   path="assets/img/blog/SCD.jpg" 
-   alt="SCD" 
-   caption="Dermatite de contact systémique (Baeck & Goossens, 2012)" 
-   class="img-fluid rounded z-depth-1 mx-auto d-block" 
+{% include figure.liquid
+   path="assets/img/blog/SCD.jpg"
+   alt="SCD"
+   caption="Dermatite de contact systémique (Baeck & Goossens, 2012)"
+   class="img-fluid rounded z-depth-1 mx-auto d-block"
    width="20%" %}
 
 ## 4.5. Molécules et réactions croisées
@@ -196,11 +195,11 @@ L'ordre de fréquence des familles allergisantes est A > B > D1 ; la famille C d
 
 - Les IDR sont à éviter (risque d'atrophie cutanée) (Isaksson et al., 2000).
 
-{% include figure.liquid 
-   path="assets/img/blog/edge_effect.jpg" 
-   alt="bord" 
-   caption="Effet bord (Baeck et al., 2009)" 
-   class="img-fluid rounded z-depth-1 mx-auto d-block" 
+{% include figure.liquid
+   path="assets/img/blog/edge_effect.jpg"
+   alt="bord"
+   caption="Effet bord (Baeck et al., 2009)"
+   class="img-fluid rounded z-depth-1 mx-auto d-block"
    width="20%" %}
 
 ### Séries de patch tests standardisées

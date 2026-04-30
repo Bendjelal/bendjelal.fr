@@ -1,6 +1,6 @@
 cv:
   name: Yanis Bendjelal
-  label: Interne en Allergologie — Chercheur 
+  label: Interne en Allergologie — Chercheur
   email: bendjelal.yanis@gmail.com
   location: Paris, France
   image: ""
@@ -9,9 +9,7 @@ cv:
     particulier pour l'analyse de données et l'intelligence artificielle appliquées
     à la clinique. Parcours combinant médecine, informatique et chimie moléculaire.
 
-
   sections:
-
     Education:
       - institution: Sorbonne Université
         location: Paris, France
@@ -52,47 +50,44 @@ cv:
         area: "Mémoire : Studying Virus-Host Interactions in Single-Cell Transcriptomics"
 
     Experience:
-      - company:  AP-HP
-        position:  Interne en Allergologie
+      - company: AP-HP
+        position: Interne en Allergologie
         location: Paris, France
         start_date: 2026
         end_date: ""
         logo: /assets/img/logos/ap_hp_logo.jpeg
 
       - company: Institut Cochin
-        position:  Stagiaire de M2 (Chimie)
+        position: Stagiaire de M2 (Chimie)
         location: Paris, France
         start_date: 2020
         end_date: 2021
         logo: /assets/img/logos/cochin.jpeg
 
       - company: Museum National d'Histoire Naturelle
-        position: Stagiaire de M2 (Informatique) 
+        position: Stagiaire de M2 (Informatique)
         location: Paris, France
         start_date: 2020
         end_date: 2020
         logo: /assets/img/logos/mnhn2.jpeg
 
       - company: Institut Pasteur
-        position: Stagaire de M1 
+        position: Stagaire de M1
         location: Paris, France
         start_date: 2019
         end_date: 2019
         logo: /assets/img/logos/pasteur.jpeg
 
-
-
-#    Awards:
-#      - title: Premier du DES d'Allergologie de Paris
-#        awarder: EDN / ECOS
-#        date: 2024
-#        summary: Reçu premier aux épreuves nationales puis aux examens cliniques objectifs structurés#
-#
-#      - title: Mention Très Bien — Master 2 Chimie (PSL), Master 2 Informatique (Sorbonne), Master 1 (Polytechnique)
-#        awarder: Université PSL / Sorbonne Université / École polytechnique
-#        date: 2021 
-#
-        
+    #    Awards:
+    #      - title: Premier du DES d'Allergologie de Paris
+    #        awarder: EDN / ECOS
+    #        date: 2024
+    #        summary: Reçu premier aux épreuves nationales puis aux examens cliniques objectifs structurés#
+    #
+    #      - title: Mention Très Bien — Master 2 Chimie (PSL), Master 2 Informatique (Sorbonne), Master 1 (Polytechnique)
+    #        awarder: Université PSL / Sorbonne Université / École polytechnique
+    #        date: 2021
+    #
 
     Languages:
       - name: Français

@@ -149,19 +149,32 @@ layout: default
 
           {% comment %} Translate section titles to French {% endcomment %}
           {% case section_title %}
-            {% when 'Education' %}{% assign section_label = "Formation" %}
-            {% when 'Awards' %}{% assign section_label = "Distinctions" %}
-            {% when 'Honors and Awards' %}{% assign section_label = "Distinctions" %}
-            {% when 'Publications' %}{% assign section_label = "Publications" %}
-            {% when 'Skills' %}{% assign section_label = "Compétences" %}
-            {% when 'Languages' %}{% assign section_label = "Langues" %}
-            {% when 'Interests' %}{% assign section_label = "Centres d'intérêt" %}
-            {% when 'Academic Interests' %}{% assign section_label = "Centres d'intérêt" %}
-            {% when 'Certificates' %}{% assign section_label = "Certifications" %}
-            {% when 'Projects' %}{% assign section_label = "Projets" %}
-            {% when 'Open Source Projects' %}{% assign section_label = "Projets open source" %}
-            {% when 'References' %}{% assign section_label = "Références" %}
-            {% else %}{% assign section_label = section_title %}
+            {% when 'Education' -%}
+              {%- assign section_label = 'Formation' %}
+            {% when 'Awards' -%}
+              {%- assign section_label = 'Distinctions' %}
+            {% when 'Honors and Awards' -%}
+              {%- assign section_label = 'Distinctions' %}
+            {% when 'Publications' -%}
+              {%- assign section_label = 'Publications' %}
+            {% when 'Skills' -%}
+              {%- assign section_label = 'Compétences' %}
+            {% when 'Languages' -%}
+              {%- assign section_label = 'Langues' %}
+            {% when 'Interests' -%}
+              {%- assign section_label = "Centres d'intérêt" %}
+            {% when 'Academic Interests' -%}
+              {%- assign section_label = "Centres d'intérêt" %}
+            {% when 'Certificates' -%}
+              {%- assign section_label = 'Certifications' %}
+            {% when 'Projects' -%}
+              {%- assign section_label = 'Projets' %}
+            {% when 'Open Source Projects' -%}
+              {%- assign section_label = 'Projets open source' %}
+            {% when 'References' -%}
+              {%- assign section_label = 'Références' %}
+            {% else -%}
+              {%- assign section_label = section_title %}
           {% endcase %}
 
           <a class="anchor" id="{{ section_title | slugify }}"></a>

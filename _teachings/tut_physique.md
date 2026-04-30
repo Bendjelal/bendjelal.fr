@@ -8,7 +8,4 @@ course_id: tut
 
 ## [Tut'Physique](https://drive.google.com/file/d/17VgBKymZdykhiSQzvBQEDLcgaoNamVCW/view)
 
-
-
-
 ## [Tut’Biologie du Développement](https://drive.google.com/file/d/17H-H5dqWLdVZrgsdDLH7bNZzYC9anwsS/view)

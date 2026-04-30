@@ -45,7 +45,7 @@ permet de mobiliser des outils computationnels avancés appliqués
 
 Dans le cadre de mes travaux de recherche, j'ai contribué au
 développement de **Viral-Track**, une méthode computationnelle publiée
-dans *Cell* (2020). Viral-Track détecte la présence d'ARN viral dans
+dans _Cell_ (2020). Viral-Track détecte la présence d'ARN viral dans
 des données de séquençage en cellule unique (scRNA-seq), permettant
 de distinguer les cellules infectées des cellules spectatrices — sans
 hypothèse a priori sur le virus présent.
@@ -55,7 +55,7 @@ de révéler l'impact du virus sur le système immunitaire des formes
 sévères, et de détecter des co-infections inattendues.
 
 → [Code source sur GitHub](https://github.com/PierreBSC/Viral-Track)
-→ [Publication dans *Cell*](https://doi.org/10.1016/j.cell.2020.05.006)
+→ [Publication dans _Cell_](https://doi.org/10.1016/j.cell.2020.05.006)
 
 ---
 
