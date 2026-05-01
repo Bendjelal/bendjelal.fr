@@ -118,7 +118,7 @@ En raison du manque de données sur la spécificité des tests cutanés, un test
 
 ## 3.7. Diagnostic différentiel : le flush aux corticoïdes
 
-**Encadré — Flush aux corticoïdes :** Vasodilatation transitoire non IgE-médiée se manifestant par un érythème brutal du visage, du cou, du haut du torse et du dos, avec sensation de chaleur. Peut être œdémateuse mais ne gratte pas. Survient 2 à 48 heures après l'injection, dure de quelques minutes à 4 jours. Plus fréquent chez la femme (ratio 3:1) et en cas de rosacée. Les doses élevées sont un facteur favorisant. Pas systématiquement molécule-dépendant. Résolution spontanée. Pas de contre-indication à la poursuite du corticoïde (Kamel et al., 2024 ; Pecquet, 2002 ; Pattrick & Doherty, 1987).
+Vasodilatation transitoire non IgE-médiée se manifestant par un érythème brutal du visage, du cou, du haut du torse et du dos, avec sensation de chaleur. Peut être œdémateuse mais ne gratte pas. Survient 2 à 48 heures après l'injection, dure de quelques minutes à 4 jours. Plus fréquent chez la femme (ratio 3:1) et en cas de rosacée. Les doses élevées sont un facteur favorisant. Pas systématiquement molécule-dépendant. Résolution spontanée. Pas de contre-indication à la poursuite du corticoïde (Kamel et al., 2024 ; Pecquet, 2002 ; Pattrick & Doherty, 1987).
 
 # 4. Réactions d'hypersensibilité retardée
 
