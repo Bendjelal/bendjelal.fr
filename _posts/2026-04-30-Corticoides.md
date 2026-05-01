@@ -2,6 +2,7 @@
 layout: post
 title: Allergie aux corticoïdes
 date: 2026-01-29
+thumbnail: assets/img/blog/cortisone.png
 images:
   lightbox2: true
   photoswipe: true
