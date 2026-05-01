@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Réaction de perfusion à la vancomycine
+thumbnail: assets/img/blog/vancomycine.png
 date: 2026-01-23
 images:
   lightbox2: true
