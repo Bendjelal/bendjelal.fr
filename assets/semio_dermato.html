@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Référentiel de sémiologie dermatologique — orientations diagnostiques</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf7f2;
+    --bg-alt: #f3ede1;
+    --ink: #1a1814;
+    --ink-soft: #4a4640;
+    --ink-faint: #8a857c;
+    --burgundy: #7a1f1f;
+    --burgundy-soft: #a14545;
+    --sage: #4a6741;
+    --amber: #a87410;
+    --red: #a83a3a;
+    --blue: #2c4a6b;
+    --border: #e0d8c8;
+    --border-strong: #c9bfa9;
+    --serif: 'Newsreader', Georgia, serif;
+    --sans: 'DM Sans', -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.65;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh;
+  }
+
+  /* ─── SIDEBAR ─────────────────────────────── */
+  .sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 2.5rem 1.5rem 2rem 2rem;
+    border-right: 1px solid var(--border);
+    background: var(--bg);
+  }
+
+  .sidebar-title {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--burgundy);
+    letter-spacing: -0.01em;
+    margin-bottom: 0.25rem;
+  }
+
+  .sidebar-sub {
+    font-size: 0.75rem;
+    color: var(--ink-faint);
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .nav-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .nav-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-faint);
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-list {
+    list-style: none;
+  }
+
+  .nav-list a {
+    display: block;
+    padding: 0.35rem 0.5rem;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 0.15s ease;
+  }
+
+  .nav-list a:hover {
+    background: var(--bg-alt);
+    color: var(--burgundy);
+    padding-left: 0.75rem;
+  }
+
+  /* ─── MAIN ────────────────────────────────── */
+  main {
+    padding: 3rem 4rem 6rem;
+    max-width: 1000px;
+  }
+
+  .doctitle {
+    font-family: var(--serif);
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+    color: var(--ink);
+  }
+
+  .doctitle em {
+    font-style: italic;
+    color: var(--burgundy);
+  }
+
+  .docsub {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--ink-faint);
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+  }
+
+  /* Disclaimer */
+  .disclaimer {
+    background: linear-gradient(to right, var(--bg-alt), transparent);
+    border-left: 3px solid var(--burgundy);
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0 3rem;
+    font-size: 0.9rem;
+  }
+
+  .disclaimer strong {
+    font-weight: 600;
+    color: var(--burgundy);
+  }
+
+  /* Sections */
+  section {
+    margin: 4rem 0;
+    scroll-margin-top: 1rem;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    margin-bottom: 0.4rem;
+    color: var(--ink);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-strong);
+  }
+
+  h2 .num {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    color: var(--burgundy);
+    font-weight: 500;
+    margin-right: 0.5rem;
+    letter-spacing: 0;
+  }
+
+  .section-lead {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--ink-faint);
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+  }
+
+  h3 {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 2.5rem 0 0.75rem;
+    color: var(--ink);
+  }
+
+  h4 {
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--burgundy);
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  p { margin-bottom: 1rem; color: var(--ink-soft); }
+
+  /* Lesion cards grid */
+  .lesion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.75rem;
+    margin: 1rem 0 1.5rem;
+  }
+
+  .lesion {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.85rem 1rem;
+    transition: all 0.15s ease;
+  }
+
+  .lesion:hover {
+    border-color: var(--burgundy-soft);
+    transform: translateY(-1px);
+  }
+
+  .lesion-name {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--burgundy);
+    margin-bottom: 0.2rem;
+  }
+
+  .lesion-def {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  /* Diagnostic trees */
+  details.tree {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+
+  details.tree[open] {
+    border-color: var(--burgundy-soft);
+  }
+
+  details.tree > summary {
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    list-style: none;
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--ink);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+  }
+
+  details.tree > summary::-webkit-details-marker { display: none; }
+
+  details.tree > summary::after {
+    content: '+';
+    font-family: var(--sans);
+    font-size: 1.4rem;
+    color: var(--burgundy);
+    font-weight: 400;
+    transition: transform 0.2s;
+  }
+
+  details.tree[open] > summary::after {
+    content: '−';
+  }
+
+  .tree-body {
+    padding: 0 1.25rem 1.25rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+  }
+
+  .question {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--burgundy);
+    margin: 1rem 0 0.5rem;
+  }
+
+  .branch {
+    margin-left: 0;
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    border-left: 2px solid var(--border-strong);
+    margin-bottom: 0.5rem;
+  }
+
+  .branch-label {
+    font-weight: 600;
+    color: var(--ink);
+    font-size: 0.92rem;
+  }
+
+  .branch-clue {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    font-style: italic;
+  }
+
+  .arrow {
+    color: var(--burgundy);
+    font-weight: 600;
+    margin: 0 0.4rem;
+  }
+
+  .dx {
+    font-weight: 700;
+    color: var(--burgundy);
+  }
+
+  .dx-strong {
+    font-weight: 700;
+    color: var(--red);
+  }
+
+  .nested {
+    margin-left: 1rem;
+    margin-top: 0.4rem;
+    padding-left: 0.75rem;
+    border-left: 1px dashed var(--border-strong);
+  }
+
+  /* Tags */
+  .tag {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-left: 0.3rem;
+    vertical-align: middle;
+  }
+
+  .tag-classic {
+    background: rgba(74, 103, 65, 0.15);
+    color: var(--sage);
+  }
+
+  .tag-frequent {
+    background: rgba(168, 116, 16, 0.12);
+    color: var(--amber);
+  }
+
+  .tag-rare {
+    background: rgba(44, 74, 107, 0.1);
+    color: var(--blue);
+  }
+
+  .tag-urgent {
+    background: rgba(168, 58, 58, 0.12);
+    color: var(--red);
+  }
+
+  /* Combination table */
+  .combo-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.92rem;
+  }
+
+  .combo-table thead {
+    background: var(--burgundy);
+    color: var(--bg);
+  }
+
+  .combo-table th {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+  }
+
+  .combo-table td {
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  .combo-table tbody tr:hover {
+    background: var(--bg-alt);
+  }
+
+  .combo-table tbody tr:nth-child(even) {
+    background: rgba(243, 237, 225, 0.4);
+  }
+
+  .combo-table .col-dx {
+    font-weight: 600;
+    color: var(--burgundy);
+  }
+
+  /* Pitfalls */
+  .pitfalls {
+    background: linear-gradient(to bottom right, #fcefef, #faf7f2);
+    border: 1px solid #e8c8c8;
+    border-radius: 6px;
+    padding: 2rem 2.5rem;
+    margin: 2rem 0;
+  }
+
+  .pitfalls h3 {
+    margin-top: 0;
+    color: var(--red);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .pitfall-item {
+    margin: 1.25rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .pitfall-item::before {
+    content: '⚠';
+    position: absolute;
+    left: 0;
+    color: var(--red);
+    font-size: 1.1rem;
+    top: -2px;
+  }
+
+  .pitfall-title {
+    font-weight: 700;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.15rem;
+  }
+
+  /* Configuration cards */
+  .config-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .config-card {
+    border: 1px solid var(--border);
+    background: var(--bg);
+    border-radius: 4px;
+    padding: 1rem 1.25rem;
+  }
+
+  .config-name {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--burgundy);
+    margin-bottom: 0.3rem;
+  }
+
+  .config-desc {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin-bottom: 0.5rem;
+  }
+
+  .config-dx {
+    font-size: 0.85rem;
+    color: var(--ink);
+  }
+
+  .config-dx strong {
+    color: var(--burgundy);
+  }
+
+  /* Print styles */
+  @media print {
+    .sidebar { display: none; }
+    .layout { grid-template-columns: 1fr; }
+    main { padding: 1rem; max-width: none; }
+    details.tree { page-break-inside: avoid; }
+    details.tree > summary::after { content: ''; }
+    details.tree[open], details.tree { border: 1px solid #999; }
+    .tree-body { display: block !important; }
+    details:not([open]) .tree-body { display: block !important; }
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { position: relative; height: auto; border-right: none; border-bottom: 1px solid var(--border); }
+    main { padding: 2rem 1.5rem; }
+    .doctitle { font-size: 2rem; }
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 6rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    font-family: var(--serif);
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-title">Référentiel</div>
+    <div class="sidebar-sub">Sémiologie dermatologique</div>
+
+    <div class="nav-section">
+      <div class="nav-label">Bases</div>
+      <ul class="nav-list">
+        <li><a href="#prelim">Préambule méthodologique</a></li>
+        <li><a href="#lesions">Lésions élémentaires</a></li>
+        <li><a href="#configurations">Configurations & dispositions</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-label">Arbres diagnostiques</div>
+      <ul class="nav-list">
+        <li><a href="#tree-eryth-squam">Plaques érythémato-squameuses</a></li>
+        <li><a href="#tree-vesicules">Vésicules</a></li>
+        <li><a href="#tree-bulles">Bulles</a></li>
+        <li><a href="#tree-pustules">Pustules</a></li>
+        <li><a href="#tree-purpura">Purpura</a></li>
+        <li><a href="#tree-urticaire">Urticaire & œdème</a></li>
+        <li><a href="#tree-erythrodermie">Érythrodermie</a></li>
+        <li><a href="#tree-nodules">Nodules</a></li>
+        <li><a href="#tree-sclerose">Sclérose & atrophie</a></li>
+        <li><a href="#tree-prurit-sans">Prurit sans lésion</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-label">Synthèse</div>
+      <ul class="nav-list">
+        <li><a href="#combos">Tableau de combinaisons</a></li>
+        <li><a href="#pitfalls">Pièges & urgences</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-label">Légende</div>
+      <ul class="nav-list" style="font-size: 0.78rem;">
+        <li><span class="tag tag-classic">Classique</span> Tableau typique</li>
+        <li><span class="tag tag-frequent">Fréquent</span> Évoquer en priorité</li>
+        <li><span class="tag tag-rare">Rare</span> À ne pas oublier</li>
+        <li><span class="tag tag-urgent">Urgence</span> Diagnostic à éliminer</li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+
+    <h1 class="doctitle">Sémiologie dermatologique <em>raisonnée</em></h1>
+    <p class="docsub">Du signe à l'orientation diagnostique — un référentiel pratique</p>
+
+    <div class="disclaimer" id="prelim">
+      <strong>Préambule.</strong> Ce document propose des associations sémiologiques classiques et leurs orientations diagnostiques. <strong>Les pourcentages chiffrés rigoureux n'existent quasi pas en sémiologie pure</strong> : la probabilité dépend du contexte (terrain, prévalence locale, mode de présentation, contexte épidémique). J'utilise donc une hiérarchie qualitative — <em>classique / fréquent / rare / urgence</em> — qui correspond à la pratique clinique. Les arbres sont des aides au raisonnement, jamais un substitut à l'examen clinique complet et à la biopsie quand elle s'impose.
+    </div>
+
+    <!-- ════════════════ LÉSIONS ÉLÉMENTAIRES ════════════════ -->
+    <section id="lesions">
+      <h2><span class="num">01</span>Lésions élémentaires</h2>
+      <p class="section-lead">Le vocabulaire qui conditionne tout le raisonnement. Une lésion mal nommée est un diagnostic mal posé.</p>
+
+      <h3>Lésions primaires</h3>
+      <div class="lesion-grid">
+        <div class="lesion"><div class="lesion-name">Macule</div><div class="lesion-def">Tache plane, pas de relief, pas d'infiltration. Érythémateuse, pigmentée, achromique, vasculaire.</div></div>
+        <div class="lesion"><div class="lesion-name">Papule</div><div class="lesion-def">Élevure circonscrite < 1 cm, palpable, sans contenu liquide.</div></div>
+        <div class="lesion"><div class="lesion-name">Plaque</div><div class="lesion-def">Élevure ou infiltration > 1 cm de surface, à bords définis ou flous.</div></div>
+        <div class="lesion"><div class="lesion-name">Nodule</div><div class="lesion-def">Lésion palpable dermique ou hypodermique, profonde, > 1 cm.</div></div>
+        <div class="lesion"><div class="lesion-name">Vésicule</div><div class="lesion-def">Élevure < 5 mm, contenu clair.</div></div>
+        <div class="lesion"><div class="lesion-name">Bulle</div><div class="lesion-def">Élevure > 5 mm, contenu clair, séro-hématique ou trouble.</div></div>
+        <div class="lesion"><div class="lesion-name">Pustule</div><div class="lesion-def">Contenu purulent (folliculaire ou non, microbienne ou amicrobienne).</div></div>
+        <div class="lesion"><div class="lesion-name">Papule œdémateuse</div><div class="lesion-def">Œdème dermique fugace, mobile (< 24 h sur une même zone) — l'urtique.</div></div>
+        <div class="lesion"><div class="lesion-name">Tumeur</div><div class="lesion-def">Prolifération palpable, taille variable, évolution prolongée.</div></div>
+      </div>
+
+      <h3>Lésions secondaires</h3>
+      <div class="lesion-grid">
+        <div class="lesion"><div class="lesion-name">Squame</div><div class="lesion-def">Lambeau de couche cornée détaché. Argentée (psoriasis), grasse (séborrhée), fine (pityriasis), furfuracée.</div></div>
+        <div class="lesion"><div class="lesion-name">Croûte</div><div class="lesion-def">Exsudat coagulé en surface, mélicérique (impétigo), hématique, séreuse.</div></div>
+        <div class="lesion"><div class="lesion-name">Érosion</div><div class="lesion-def">Perte de substance épidermique superficielle, cicatrise sans séquelle.</div></div>
+        <div class="lesion"><div class="lesion-name">Ulcération</div><div class="lesion-def">Perte de substance dermique, laisse cicatrice.</div></div>
+        <div class="lesion"><div class="lesion-name">Fissure</div><div class="lesion-def">Fente linéaire, plis, pulpes.</div></div>
+        <div class="lesion"><div class="lesion-name">Atrophie</div><div class="lesion-def">Amincissement, peau fine, télangiectasies visibles, plissement parchemin.</div></div>
+        <div class="lesion"><div class="lesion-name">Sclérose</div><div class="lesion-def">Induration, perte de la souplesse, peau cartonnée non plissable.</div></div>
+        <div class="lesion"><div class="lesion-name">Lichénification</div><div class="lesion-def">Épaississement avec accentuation du quadrillage cutané — grattage chronique.</div></div>
+        <div class="lesion"><div class="lesion-name">Cicatrice</div><div class="lesion-def">Atrophique, hypertrophique, chéloïdienne.</div></div>
+      </div>
+
+      <h3>Lésions particulières</h3>
+      <div class="lesion-grid">
+        <div class="lesion"><div class="lesion-name">Purpura</div><div class="lesion-def">Extravasation érythrocytaire — <em>ne s'efface pas à la vitropression</em>. Plat (hématologique) ou infiltré (vasculaire).</div></div>
+        <div class="lesion"><div class="lesion-name">Télangiectasie</div><div class="lesion-def">Dilatation vasculaire visible, s'efface à la vitropression.</div></div>
+        <div class="lesion"><div class="lesion-name">Comédon</div><div class="lesion-def">Ouvert (point noir) ou fermé (microkyste blanc) — pathognomonique de l'acné rétentionnelle.</div></div>
+        <div class="lesion"><div class="lesion-name">Sillon scabieux</div><div class="lesion-def">Trajet linéaire blanchâtre 5–10 mm, espaces interdigitaux, poignets — pathognomonique de la gale.</div></div>
+        <div class="lesion"><div class="lesion-name">Vésicule perlée</div><div class="lesion-def">Petite vésicule en bout de sillon scabieux.</div></div>
+      </div>
+    </section>
+
+    <!-- ════════════════ CONFIGURATIONS ════════════════ -->
+    <section id="configurations">
+      <h2><span class="num">02</span>Configurations & dispositions</h2>
+      <p class="section-lead">La <em>manière</em> dont les lésions s'organisent porte autant d'information que la lésion elle-même.</p>
+
+      <div class="config-grid">
+        <div class="config-card">
+          <div class="config-name">En bouquet (herpétiforme)</div>
+          <div class="config-desc">Vésicules groupées en grappe sur fond érythémateux.</div>
+          <div class="config-dx">→ <strong>Herpès</strong>, zona, dermatite herpétiforme.</div>
+        </div>
+
+        <div class="config-card">
+          <div class="config-name">Annulaire (centrifuge)</div>
+          <div class="config-desc">Anneau avec bordure active, centre clair.</div>
+          <div class="config-dx">→ <strong>Dermatophytose</strong>, granulome annulaire, érythème annulaire centrifuge, lupus subaigu, urticaire annulaire, érythème migrant (Lyme).</div>
+        </div>
+
+        <div class="config-card">
+          <div class="config-name">En cocarde / cible</div>
+          <div class="config-desc">3 zones concentriques (centre violacé, halo pâle, anneau rouge).</div>
+          <div class="config-dx">→ <strong>Érythème polymorphe</strong> (typique = 3 zones).</div>
+        </div>
+
+        <div class="config-card">
+          <div class="config-name">Linéaire — Köbner</div>
+          <div class="config-desc">Reproduction des lésions sur un traumatisme.</div>
+          <div class="config-dx">→ <strong>Psoriasis, lichen plan</strong>, vitiligo, verrues.</div>
+        </div>
+
+        <div class="config-card">
+          <div class="config-name">Linéaire — lignes de Blaschko</div>
+          <div class="config-desc">Trajets embryonnaires en S sur tronc, V sur dos, lignes droites sur membres.</div>
+          <div class="config-dx">→ Mosaïcismes (incontinentia pigmenti), <strong>lichen striatus</strong>, ILVEN.</div>
+        </div>
+
+        <div class="config-card">
+          <div class="config-name">Métamérique</div>
+          <div class="config-desc">Limitée à un dermatome, unilatérale.</div>
+          <div class="config-dx">→ <strong>Zona</strong> (++ thoracique, V1 ophtalmique).</div>
+        </div>
+
+        <div class="config-card">
+          <div class="config-name">Réticulée / livedoïde</div>
+          <div class="config-desc">Maillage violacé, accentué au froid.</div>
+          <div class="config-dx">→ Livedo physiologique, <strong>livedo vasculaire</strong> (SAPL, vasculite, embolies de cholestérol).</div>
+        </div>
+
+        <div class="config-card">
+          <div class="config-name">Serpigineuse / migrante</div>
+          <div class="config-desc">Trajet sinueux, progresse jour après jour.</div>
+          <div class="config-dx">→ <strong>Larva migrans</strong>, érythème chronique migrant (borréliose).</div>
+        </div>
+
+        <div class="config-card">
+          <div class="config-name">Photo-distribuée</div>
+          <div class="config-desc">Visage, V cervical, dos des mains, avant-bras. Épargne triangle sous-mentonnier, paupières sup.</div>
+          <div class="config-dx">→ <strong>Lupus, photosensibilisation</strong>, lucite, porphyrie, pellagre.</div>
+        </div>
+
+        <div class="config-card">
+          <div class="config-name">Symétrique / bilatérale</div>
+          <div class="config-desc">Mêmes territoires des deux côtés.</div>
+          <div class="config-dx">→ Quasi tout dermatose endogène (psoriasis, eczéma atopique, toxidermie, autoimmune).</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════ ARBRE 1 : ÉRYTHÉMATO-SQUAMEUX ════════════════ -->
+    <section id="tree-eryth-squam">
+      <h2><span class="num">03</span>Arbres diagnostiques</h2>
+      <p class="section-lead">Pour chaque tableau syndromique, la séquence des questions cliniques pertinentes et les diagnostics qu'elles éliminent.</p>
+
+      <details class="tree" open>
+        <summary>Plaques érythémato-squameuses</summary>
+        <div class="tree-body">
+          <div class="question">1. Topographie prédominante ?</div>
+
+          <div class="branch">
+            <div class="branch-label">Faces d'extension (coudes, genoux, lombes), cuir chevelu, ongles</div>
+            <div class="nested">
+              <span class="branch-clue">Squames argentées épaisses + signe d'Auspitz (rosée sanglante au grattage) + Köbner</span>
+              <span class="arrow">→</span> <span class="dx">Psoriasis vulgaire</span> <span class="tag tag-classic">Classique</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Plis de flexion, mains, joues du nourrisson</div>
+            <div class="nested">
+              <span class="branch-clue">Prurit majeur, suintement, lichénification, terrain atopique</span>
+              <span class="arrow">→</span> <span class="dx">Eczéma / Dermatite atopique</span> <span class="tag tag-classic">Classique</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Visage médian, sourcils, sillons nasogéniens, sterno-claviculaire, cuir chevelu</div>
+            <div class="nested">
+              <span class="branch-clue">Squames grasses jaunâtres, érythème mal limité</span>
+              <span class="arrow">→</span> <span class="dx">Dermite séborrhéique</span> <span class="tag tag-frequent">Fréquent</span>
+              <br><em style="font-size: 0.85rem; color: var(--ink-faint);">Si forme étendue/sévère : penser VIH, Parkinson.</em>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Tronc, axes de répartition</div>
+            <div class="nested">
+              <span class="branch-clue">Médaillon initial 2–5 cm + éruption secondaire en sapin de Noël, collerette desquamative</span>
+              <span class="arrow">→</span> <span class="dx">Pityriasis rosé de Gibert</span> <span class="tag tag-classic">Classique</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Photo-distribuée (visage, V cervical, dos mains)</div>
+            <div class="nested">
+              <span class="branch-clue">Vespertilio, érythème malaire fixe + signes systémiques</span>
+              <span class="arrow">→</span> <span class="dx">Lupus érythémateux systémique</span><br>
+              <span class="branch-clue">Plaques annulaires ou psoriasiformes photo-induites, sans cicatrice</span>
+              <span class="arrow">→</span> <span class="dx">Lupus cutané subaigu (LECS)</span> <span class="tag tag-frequent">Fréquent</span><br>
+              <span class="branch-clue">Plaques érythémato-squameuses cicatricielles, atrophie, bouchons cornés</span>
+              <span class="arrow">→</span> <span class="dx">Lupus discoïde</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Plaque annulaire avec bordure active</div>
+            <div class="nested">
+              <span class="branch-clue">Bordure vésiculo-squameuse, prurit, asymétrique, contact animal</span>
+              <span class="arrow">→</span> <span class="dx">Dermatophytose (herpès circiné)</span> <span class="tag tag-classic">Classique</span><br>
+              <em style="font-size: 0.85rem; color: var(--ink-faint);">Examen mycologique avant tout traitement, surtout corticoïde.</em>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Tronc — plaques chamois fines, séborrhéiques</div>
+            <div class="nested">
+              <span class="branch-clue">Squames fines révélées par grattage (signe du copeau), achromiques après soleil</span>
+              <span class="arrow">→</span> <span class="dx">Pityriasis versicolor</span> <span class="tag tag-frequent">Fréquent</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Plaques fixes, polycycliques, chroniques, peu prurigineuses</div>
+            <div class="nested">
+              <span class="branch-clue">Adulte, plaques infiltrées résistantes aux dermocorticoïdes, parfois patches érythémato-squameux fixes</span>
+              <span class="arrow">→</span> <span class="dx">Mycosis fongoïde</span> <span class="tag tag-rare">Rare</span> <span class="tag tag-urgent">Urgence diag.</span>
+              <br><em style="font-size: 0.85rem; color: var(--ink-faint);">Toute dermatose érythémato-squameuse traînante chez l'adulte → biopsies multiples.</em>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Palmoplantaire — kératodermie hyperkératosique</div>
+            <div class="nested">
+              <span class="arrow">→</span> Psoriasis palmoplantaire, eczéma chronique, dermatophytose, kératodermies génétiques.
+            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ════════════════ ARBRE 2 : VÉSICULES ════════════════ -->
+    <section id="tree-vesicules">
+      <details class="tree">
+        <summary>Vésicules</summary>
+        <div class="tree-body">
+          <div class="question">1. Disposition ?</div>
+
+          <div class="branch">
+            <div class="branch-label">En bouquet localisé sur fond érythémateux</div>
+            <div class="nested">
+              <span class="branch-clue">Métamérique, douleur préalable ou contemporaine, unilatérale, &gt; 50 ans</span>
+              <span class="arrow">→</span> <span class="dx">Zona</span> <span class="tag tag-classic">Classique</span><br>
+              <span class="branch-clue">Récidivant, lèvres, génitales, prodromes (picotement)</span>
+              <span class="arrow">→</span> <span class="dx">Herpès simplex</span> <span class="tag tag-classic">Classique</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Diffuses, polymorphes</div>
+            <div class="nested">
+              <span class="branch-clue">Macules + papules + vésicules + croûtes coexistent, tronc, fièvre, enfant ou adulte non vacciné</span>
+              <span class="arrow">→</span> <span class="dx">Varicelle</span> <span class="tag tag-classic">Classique</span><br>
+              <span class="branch-clue">Mains, pieds, bouche, enfant, contexte épidémique</span>
+              <span class="arrow">→</span> <span class="dx">Syndrome pieds-mains-bouche (Coxsackie A)</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Palmoplantaires</div>
+            <div class="nested">
+              <span class="branch-clue">Faces latérales des doigts, profondes, prurigineuses, récidivantes en poussées</span>
+              <span class="arrow">→</span> <span class="dx">Dyshidrose / eczéma dyshidrosique</span> <span class="tag tag-frequent">Fréquent</span><br>
+              <span class="branch-clue">Sur fond érythémateux mal limité, prurit + suintement</span>
+              <span class="arrow">→</span> <span class="dx">Eczéma palmaire</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Sur plaques mal limitées, prurigineuses</div>
+            <div class="nested">
+              <span class="branch-clue">Limites floues, vésicules en tête d'épingle, suintement</span>
+              <span class="arrow">→</span> <span class="dx">Eczéma aigu</span> <span class="tag tag-classic">Classique</span><br>
+              <span class="branch-clue">Limites <em>nettes</em>, topographie évocatrice (montre, lobe d'oreille, sandales), notion d'allergène</span>
+              <span class="arrow">→</span> <span class="dx">Dermite de contact allergique</span> <span class="tag tag-frequent">Fréquent</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Vésicules + papules très prurigineuses, faces d'extension, fesses</div>
+            <div class="nested">
+              <span class="branch-clue">Excoriations majeures (lésions intactes rares), association maladie cœliaque</span>
+              <span class="arrow">→</span> <span class="dx">Dermatite herpétiforme (Duhring-Brocq)</span> <span class="tag tag-rare">Rare</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Vésicules photo-induites, dos des mains, fragilité cutanée</div>
+            <div class="nested">
+              <span class="branch-clue">Bulles tendues, érosions cicatricielles, hypertrichose temporo-malaire</span>
+              <span class="arrow">→</span> <span class="dx">Porphyrie cutanée tardive</span> <span class="tag tag-rare">Rare</span>
+            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ════════════════ ARBRE 3 : BULLES ════════════════ -->
+    <section id="tree-bulles">
+      <details class="tree">
+        <summary>Bulles</summary>
+        <div class="tree-body">
+          <div class="question">1. Tendues ou flasques ? Signe de Nikolsky ?</div>
+
+          <div class="branch">
+            <div class="branch-label">Tendues, sujet âgé, prurit intense</div>
+            <div class="nested">
+              <span class="branch-clue">Sur peau saine ou érythémato-urticariforme, plis et abdomen, <strong>Nikolsky négatif</strong>, pas d'atteinte muqueuse en règle</span>
+              <span class="arrow">→</span> <span class="dx">Pemphigoïde bulleuse</span> <span class="tag tag-classic">Classique</span>
+              <br><em style="font-size: 0.85rem; color: var(--ink-faint);">Le plus fréquent des dermatoses bulleuses auto-immunes en France. IFD : dépôt linéaire IgG/C3 jonction dermo-épidermique.</em>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Flasques, érosives, atteinte muqueuse</div>
+            <div class="nested">
+              <span class="branch-clue"><strong>Nikolsky positif</strong>, érosions buccales souvent inaugurales, douleurs, dénutrition</span>
+              <span class="arrow">→</span> <span class="dx">Pemphigus vulgaire</span> <span class="tag tag-frequent">Fréquent</span>
+              <br><span class="branch-clue">Bulles fragiles, érosions superficielles, pas d'atteinte muqueuse, séborrhéique</span>
+              <span class="arrow">→</span> <span class="dx">Pemphigus foliacé</span>
+              <br><em style="font-size: 0.85rem; color: var(--ink-faint);">IFD : dépôt en mailles d'IgG. IFI : Ac anti-desmogléines.</em>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Cocardes typiques (3 zones), extensions extrémités</div>
+            <div class="nested">
+              <span class="branch-clue">Post-herpétique (mineur) ou idiopathique, post-Mycoplasma</span>
+              <span class="arrow">→</span> <span class="dx">Érythème polymorphe</span> <span class="tag tag-classic">Classique</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Décollement épidermique extensif, fébrile, médicament récent</div>
+            <div class="nested">
+              <span class="branch-clue">Atteinte muqueuse ≥ 2 sites, Nikolsky positif</span><br>
+              <em>&lt; 10 % SC :</em> <span class="dx-strong">Stevens-Johnson</span> <span class="tag tag-urgent">Urgence</span><br>
+              <em>10–30 % :</em> <span class="dx-strong">SJS-NET overlap</span> <span class="tag tag-urgent">Urgence</span><br>
+              <em>&gt; 30 % :</em> <span class="dx-strong">Nécrolyse épidermique toxique (Lyell)</span> <span class="tag tag-urgent">Urgence vitale</span>
+              <br><em style="font-size: 0.85rem; color: var(--ink-faint);">Médicaments à risque : sulfamides, allopurinol, antiépileptiques (lamotrigine, carbamazépine), AINS oxicams, névirapine. Score SCORTEN à H+24.</em>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Enfant, décollement diffus, peau parcheminée, fièvre</div>
+            <div class="nested">
+              <span class="branch-clue">Nikolsky positif <em>en peau saine</em>, muqueuses respectées</span>
+              <span class="arrow">→</span> <span class="dx-strong">SSSS / épidermolyse staphylococcique</span> <span class="tag tag-urgent">Urgence</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Petites bulles très prurigineuses faces d'extension</div>
+            <div class="nested">
+              <span class="arrow">→</span> <span class="dx">Dermatite herpétiforme</span> (cf. arbre vésicules)
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Bulles photo-induites, dos des mains, fragilité</div>
+            <div class="nested">
+              <span class="arrow">→</span> <span class="dx">Porphyrie cutanée tardive</span>, pseudoporphyrie médicamenteuse.
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Localisée, contexte mécanique ou thermique</div>
+            <div class="nested">
+              <span class="arrow">→</span> Brûlure, phytophotodermatose, ampoule mécanique, piqûre d'insecte (réaction bulleuse).
+            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ════════════════ ARBRE 4 : PUSTULES ════════════════ -->
+    <section id="tree-pustules">
+      <details class="tree">
+        <summary>Pustules</summary>
+        <div class="tree-body">
+          <div class="question">1. Folliculaires ou amicrobiennes ?</div>
+
+          <div class="branch">
+            <div class="branch-label">Folliculaires, visage / dos / décolleté</div>
+            <div class="nested">
+              <span class="branch-clue">+ comédons (ouverts/fermés), adolescent</span>
+              <span class="arrow">→</span> <span class="dx">Acné</span> <span class="tag tag-classic">Classique</span><br>
+              <span class="branch-clue">Sans comédons, après corticothérapie, monomorphe</span>
+              <span class="arrow">→</span> <span class="dx">Acné cortisonique / folliculite</span><br>
+              <span class="branch-clue">Tronc, dos, après bain chaud / piscine</span>
+              <span class="arrow">→</span> <span class="dx">Folliculite à Pseudomonas</span><br>
+              <span class="branch-clue">Cuir chevelu, barbe, prurigineuses</span>
+              <span class="arrow">→</span> <span class="dx">Folliculite bactérienne (S. aureus)</span> ou à Malassezia
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Centro-faciales, érythème permanent, télangiectasies, sans comédon</div>
+            <div class="nested">
+              <span class="arrow">→</span> <span class="dx">Rosacée papulo-pustuleuse</span> <span class="tag tag-frequent">Fréquent</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Pustules amicrobiennes sur plaques psoriasiformes</div>
+            <div class="nested">
+              <span class="branch-clue">Pustules en lac, fébriles, généralisées</span>
+              <span class="arrow">→</span> <span class="dx">Psoriasis pustuleux généralisé (von Zumbusch)</span> <span class="tag tag-urgent">Urgence</span><br>
+              <span class="branch-clue">Paumes / plantes seules, chronique</span>
+              <span class="arrow">→</span> <span class="dx">Pustulose palmoplantaire</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Éruption pustuleuse aiguë fébrile, médicament récent (&lt; 3 j)</div>
+            <div class="nested">
+              <span class="branch-clue">Centaines de petites pustules amicrobiennes sur fond érythémateux, plis, hyperleucocytose à PNN</span>
+              <span class="arrow">→</span> <span class="dx-strong">PEAG / AGEP</span> <span class="tag tag-urgent">Urgence</span>
+              <br><em style="font-size: 0.85rem; color: var(--ink-faint);">Médicaments : β-lactamines, macrolides, diltiazem, hydroxychloroquine.</em>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Plis (sous-mammaires, inguinaux), fond érythémateux + pustulettes périphériques</div>
+            <div class="nested">
+              <span class="arrow">→</span> <span class="dx">Candidose intertrigineuse</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Pustules sur plaques annulaires migratrices, fébrile, sujet >50 ans</div>
+            <div class="nested">
+              <span class="arrow">→</span> <span class="dx">Sweet syndrome (dermatose neutrophilique)</span> <span class="tag tag-rare">Rare</span> — chercher hémopathie sous-jacente.
+            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ════════════════ ARBRE 5 : PURPURA ════════════════ -->
+    <section id="tree-purpura">
+      <details class="tree">
+        <summary>Purpura</summary>
+        <div class="tree-body">
+          <div class="question">1. <strong>Plat ou infiltré (palpable) ?</strong> — la question fondamentale.</div>
+
+          <div class="branch">
+            <div class="branch-label">Purpura plat, non infiltré</div>
+            <div class="nested">
+              <em>= origine hématologique le plus souvent.</em><br>
+              <span class="branch-clue">Pétéchies + ecchymoses + hémorragies muqueuses (gencives, épistaxis, méno)</span>
+              <span class="arrow">→</span> <span class="dx">Thrombopénie</span> (PTI, médicaments, hémopathie, CIVD débutante, MAT)<br>
+              <span class="branch-clue">Diffus, asymétrique, sujet âgé sous AVK / antiagrégants</span>
+              <span class="arrow">→</span> Iatrogène / fragilité<br>
+              <span class="branch-clue">Dos des mains, avant-bras, sénile, peau atrophique</span>
+              <span class="arrow">→</span> <span class="dx">Purpura sénile de Bateman</span><br>
+              <span class="branch-clue">Membres inférieurs, déclive, varices, sans signe systémique</span>
+              <span class="arrow">→</span> <span class="dx">Capillarite — angiodermite purpurique et pigmentée (Schamberg)</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Purpura infiltré (palpable)</div>
+            <div class="nested">
+              <em>= vasculite jusqu'à preuve du contraire.</em><br>
+              <span class="branch-clue">Membres inférieurs, déclive, polymorphe (pétéchies, papules purpuriques, parfois bulles, nécrose)</span>
+              <span class="arrow">→</span> <span class="dx">Vasculite leucocytoclasique</span> <span class="tag tag-classic">Classique</span><br>
+              <span class="branch-clue">Enfant + arthralgies + douleurs abdominales + atteinte rénale (hématurie/protéinurie)</span>
+              <span class="arrow">→</span> <span class="dx">Vasculite à IgA (purpura rhumatoïde)</span><br>
+              <span class="branch-clue">Adulte + cryoglobulinémie / VHC / connectivite</span>
+              <span class="arrow">→</span> Vasculite cryoglobulinémique
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Purpura nécrotique, rétiforme, étoilé</div>
+            <div class="nested">
+              <span class="branch-clue">Lésions stellaires noires extensives, contexte septique, fièvre, choc</span>
+              <span class="arrow">→</span> <span class="dx-strong">Purpura fulminans (méningococcémie)</span> <span class="tag tag-urgent">Urgence vitale</span><br>
+              <span class="branch-clue">Sans choc, livedo, contexte SAPL / cryoglobulinémie type I / embolies de cholestérol / calciphylaxie / CIVD chronique</span>
+              <span class="arrow">→</span> Diagnostic étiologique large.
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Bilan minimal devant tout purpura</div>
+            <div class="nested">
+              <em style="font-size: 0.88rem;">NFS-plaquettes, bilan d'hémostase, créatinine + BU (hématurie/protéinurie), CRP. Biopsie cutanée + IFD si vasculite suspectée.</em>
+            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ════════════════ ARBRE 6 : URTICAIRE ════════════════ -->
+    <section id="tree-urticaire">
+      <details class="tree">
+        <summary>Urticaire & angio-œdème</summary>
+        <div class="tree-body">
+          <div class="question">1. Lésions fugaces (&lt; 24 h sur une zone) ou fixes ?</div>
+
+          <div class="branch">
+            <div class="branch-label">Papules / plaques œdémateuses fugaces, mobiles, prurigineuses</div>
+            <div class="nested">
+              <span class="branch-clue">Aiguë &lt; 6 sem (souvent virale, alimentaire, médicamenteuse)</span>
+              <span class="arrow">→</span> <span class="dx">Urticaire aiguë</span> <span class="tag tag-classic">Classique</span><br>
+              <span class="branch-clue">Chronique ≥ 6 sem, &gt; 2 j/sem</span>
+              <span class="arrow">→</span> <span class="dx">Urticaire chronique spontanée ou inductible</span> (dermographique, au froid, retardée à la pression, cholinergique, solaire, aquagénique)
+              <br><em style="font-size: 0.85rem; color: var(--ink-faint);">Bilan minimal en chronique = NFS, CRP, TSH. Pas d'allergologie systématique.</em>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Lésions urticariennes <em>fixes &gt; 24 h</em>, brûlure plus que prurit, séquelles pigmentées</div>
+            <div class="nested">
+              <span class="arrow">→</span> <span class="dx">Vasculite urticarienne</span> <span class="tag tag-rare">Rare</span> — biopsie obligatoire ; chercher connectivite, hépatite, cryoglobulinémie.
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Œdème profond sans prurit, lèvres / paupières / langue / glotte</div>
+            <div class="nested">
+              <span class="branch-clue">Histaminergique : associé à l'urticaire, antiH1-sensible, parfois choc</span>
+              <span class="arrow">→</span> <span class="dx">Angio-œdème histaminergique (anaphylaxie ?)</span> <span class="tag tag-urgent">Urgence si glotte/choc</span><br>
+              <span class="branch-clue">Bradykinique : sans urticaire, sans prurit, IEC++, déficit C1-inhibiteur, antiH1-résistant</span>
+              <span class="arrow">→</span> <span class="dx-strong">Angio-œdème bradykinique</span> <span class="tag tag-urgent">Urgence</span> — icatibant / C1-inh.
+              <br><em style="font-size: 0.85rem; color: var(--ink-faint);">Penser systématiquement à éliminer l'angio-œdème bradykinique : 1/3 des AO sont mal diagnostiqués comme allergiques.</em>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Urticaire fébrile + ADP + œdème visage + médicament 2–8 sem avant</div>
+            <div class="nested">
+              <span class="arrow">→</span> <span class="dx-strong">DRESS débutant</span> <span class="tag tag-urgent">Urgence</span> — chercher hyperéosinophilie, atteinte hépatique.
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Pseudo-urticaires à connaître</div>
+            <div class="nested">
+              — Mastocytose (urticaire pigmentaire, signe de Darier)<br>
+              — Syndromes auto-inflammatoires (CAPS, Schnitzler)<br>
+              — Pemphigoïde au stade pré-bulleux (urticarienne)
+            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ════════════════ ARBRE 7 : ÉRYTHRODERMIE ════════════════ -->
+    <section id="tree-erythrodermie">
+      <details class="tree">
+        <summary>Érythrodermie (≥ 90 % de la surface corporelle)</summary>
+        <div class="tree-body">
+          <div class="question">Toujours hospitalier. 4 grandes étiologies à connaître.</div>
+
+          <div class="branch">
+            <div class="branch-label">Antécédent de psoriasis, squames épaisses, kératodermie</div>
+            <div class="nested">
+              <span class="arrow">→</span> <span class="dx">Psoriasis érythrodermique</span> <span class="tag tag-classic">Classique</span>
+              <br><em style="font-size: 0.85rem; color: var(--ink-faint);">Souvent déclenché par sevrage brutal de corticoïdes systémiques, infection.</em>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Terrain atopique, suintement, lichénification, prurit majeur</div>
+            <div class="nested">
+              <span class="arrow">→</span> <span class="dx">Eczéma érythrodermique / dermatite atopique sévère</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Médicament récent + fièvre + ADP + atteinte viscérale</div>
+            <div class="nested">
+              <span class="branch-clue">Hyperéosinophilie, lymphocytes atypiques, cytolyse hépatique, néphrite</span>
+              <span class="arrow">→</span> <span class="dx-strong">DRESS</span> <span class="tag tag-urgent">Urgence</span>
+              <br><em style="font-size: 0.85rem; color: var(--ink-faint);">Médicaments : antiépileptiques aromatiques, allopurinol, sulfasalazine, minocycline, vancomycine.</em>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Sujet âgé, érythrodermie chronique, ADP, prurit</div>
+            <div class="nested">
+              <span class="branch-clue">Cellules de Sézary circulantes, infiltrat lymphocytaire dermique épidermotrope</span>
+              <span class="arrow">→</span> <span class="dx">Syndrome de Sézary / mycosis fongoïde érythrodermique</span> <span class="tag tag-rare">Rare</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Causes plus rares à évoquer</div>
+            <div class="nested">
+              — <span class="dx">Gale norvégienne (hyperkératosique)</span> : immunodéprimé, EHPAD, contagieux+++<br>
+              — Pityriasis rubra pilaire (îlots de peau saine, kératodermie orangée)<br>
+              — Pemphigus foliacé érythrodermique<br>
+              — Ichtyoses graves (érythrodermies congénitales)
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Bilan en urgence</div>
+            <div class="nested">
+              <em style="font-size: 0.88rem;">Hospitalisation, bilan hydroélectrolytique, hémocultures, NFS, CRP, EPS, hémostase, fonction rénale et hépatique, biopsies cutanées multiples, fond d'œil, ECG, recherche de cellules de Sézary si tableau évocateur.</em>
+            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ════════════════ ARBRE 8 : NODULES ════════════════ -->
+    <section id="tree-nodules">
+      <details class="tree">
+        <summary>Nodules dermo-hypodermiques</summary>
+        <div class="tree-body">
+          <div class="question">1. Topographie et caractère évolutif ?</div>
+
+          <div class="branch">
+            <div class="branch-label">Faces antérieures des jambes, douloureux, fugaces, sans ulcération</div>
+            <div class="nested">
+              <span class="branch-clue">Évolution biligénique (rouge → ecchymotique), pas de cicatrice</span>
+              <span class="arrow">→</span> <span class="dx">Érythème noueux</span> <span class="tag tag-classic">Classique</span>
+              <br><em style="font-size: 0.85rem; color: var(--ink-faint);">Étiologies : strepto, sarcoïdose, MICI, Yersinia, médicaments (CO, sulfamides), tuberculose, Behçet, idiopathique (50 %).</em>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Mollets postérieurs, ulcérations, chronicité, femme</div>
+            <div class="nested">
+              <span class="arrow">→</span> <span class="dx">Vasculite nodulaire / érythème induré de Bazin</span> <span class="tag tag-rare">Rare</span> — chercher tuberculose latente.
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Visage, papules infiltrées brun-rouge, signe vitropression « lupoïde »</div>
+            <div class="nested">
+              <span class="arrow">→</span> <span class="dx">Sarcoïdose cutanée</span> — bilan de sarcoïdose systémique.
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Nodule unique, croissance progressive, ulcération centrale, exposé</div>
+            <div class="nested">
+              <span class="branch-clue">Perlé, télangiectasies, sujet âgé, photo-exposé</span>
+              <span class="arrow">→</span> <span class="dx">Carcinome basocellulaire</span> <span class="tag tag-classic">Classique</span><br>
+              <span class="branch-clue">Bourgeonnant, ulcéro-croûteux, kératosique</span>
+              <span class="arrow">→</span> <span class="dx">Carcinome épidermoïde</span><br>
+              <span class="branch-clue">Pigmenté, asymétrique, croissance rapide, modification d'un nævus</span>
+              <span class="arrow">→</span> <span class="dx-strong">Mélanome (forme nodulaire)</span> <span class="tag tag-urgent">Urgence</span>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Nodules multiples cutanés, sujet âgé, contexte tumoral connu</div>
+            <div class="nested">
+              <span class="arrow">→</span> Métastases cutanées (sein++, poumon, mélanome, rein), lymphomes cutanés.
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Nodule sous-cutané indolore, mobile, diamètre stable</div>
+            <div class="nested">
+              <span class="arrow">→</span> Lipome, kyste épidermique, fibrome.
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Nodules inflammatoires des plis (axillaires, inguinaux), sinus, abcès</div>
+            <div class="nested">
+              <span class="arrow">→</span> <span class="dx">Hidradénite suppurée (maladie de Verneuil)</span> <span class="tag tag-frequent">Fréquent</span>
+            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ════════════════ ARBRE 9 : SCLÉROSE ════════════════ -->
+    <section id="tree-sclerose">
+      <details class="tree">
+        <summary>Sclérose & atrophie</summary>
+        <div class="tree-body">
+          <div class="question">Localisée ou diffuse ?</div>
+
+          <div class="branch">
+            <div class="branch-label">Plaques sclérosées localisées, ivoirines centrales, halo lilas périphérique</div>
+            <div class="nested">
+              <span class="arrow">→</span> <span class="dx">Morphée (sclérodermie en plaques)</span> — formes profondes, en bandes, généralisée.
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Sclérose diffuse, doigts boudinés, Raynaud, télangiectasies, calcinose</div>
+            <div class="nested">
+              <span class="branch-clue">Sclérodactylie + reflux + télangiectasies + Raynaud + calcinose</span>
+              <span class="arrow">→</span> <span class="dx">Sclérodermie systémique (CREST si limitée)</span> — anti-centromère / anti-Scl70.
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Plaques nacrées atrophiques, vulvaires / préputiales / périanales</div>
+            <div class="nested">
+              <span class="branch-clue">Prurit, dyspareunie, sclérose tardive</span>
+              <span class="arrow">→</span> <span class="dx">Lichen scléreux</span> <span class="tag tag-frequent">Fréquent</span>
+              <br><em style="font-size: 0.85rem; color: var(--ink-faint);">Surveillance : risque de carcinome épidermoïde vulvaire.</em>
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Atrophie iatrogène : peau fine, télangiectasies, vergetures pourpres</div>
+            <div class="nested">
+              <span class="arrow">→</span> <span class="dx">Atrophie cortisonique</span> (locale ou systémique).
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Atrophies circonscrites en pastilles (peau froissée enfoncée)</div>
+            <div class="nested">
+              <span class="arrow">→</span> Anetodermie (primaire ou secondaire à inflammation).
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Sclérose membre + atteinte respiratoire après injection de gadolinium chez l'IRC</div>
+            <div class="nested">
+              <span class="arrow">→</span> <span class="dx">Fibrose systémique néphrogénique</span> <span class="tag tag-rare">Rare</span>
+            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ════════════════ ARBRE 10 : PRURIT SANS LÉSION ════════════════ -->
+    <section id="tree-prurit-sans">
+      <details class="tree">
+        <summary>Prurit <em>sans lésion primitive</em> (lésions de grattage uniquement)</summary>
+        <div class="tree-body">
+          <div class="question">Chercher l'origine extra-cutanée ou pré-éruptive.</div>
+
+          <div class="branch">
+            <div class="branch-label">Causes systémiques à éliminer en première intention</div>
+            <div class="nested">
+              — <span class="dx">Cholestase</span> (bilirubine, GGT, PAL) — prurit palmoplantaire, parfois ictère<br>
+              — <span class="dx">Insuffisance rénale chronique</span> (urée, créat) — prurit urémique<br>
+              — <span class="dx">Hémopathies</span> : lymphome de Hodgkin (prurit aquagénique), polyglobulie de Vaquez (post-bain), leucémies<br>
+              — <span class="dx">Dysthyroïdies</span><br>
+              — <span class="dx">Carence martiale / déficit B12</span><br>
+              — Médicaments (opioïdes, IEC, statines)<br>
+              — Néoplasies solides (paranéoplasique)
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Cause cutanée pré-éruptive à reconsidérer après quelques semaines</div>
+            <div class="nested">
+              — <span class="dx">Pemphigoïde bulleuse</span> au stade urticarien/prurigineux<br>
+              — <span class="dx">Gale</span> (si prurit nocturne et conjugal/familial)<br>
+              — Lymphome cutané T débutant
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="branch-label">Bilan minimal du prurit chronique sans lésion</div>
+            <div class="nested">
+              <em style="font-size: 0.88rem;">NFS, ferritinémie, créatinine, bilan hépatique, TSH, EPS, LDH, sérologies VHB/VHC/VIH, radio thorax. Selon orientation : TDM TAP, biopsie pemphigoïde si terrain.</em>
+            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ════════════════ TABLEAU DE COMBINAISONS ════════════════ -->
+    <section id="combos">
+      <h2><span class="num">04</span>Tableau de combinaisons sémiologiques</h2>
+      <p class="section-lead">Lecture rapide : <em>lésion principale + élément associé → orientation prioritaire</em>. Hiérarchie indicative, pas exhaustive.</p>
+
+      <table class="combo-table">
+        <thead>
+          <tr>
+            <th style="width: 22%;">Lésion principale</th>
+            <th style="width: 40%;">+ Élément clé associé</th>
+            <th style="width: 26%;">Orientation prioritaire</th>
+            <th style="width: 12%;">Niveau</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Vésicules en bouquet</td><td>Sur fond érythémateux, métamérique, douleur</td><td class="col-dx">Zona</td><td><span class="tag tag-classic">Classique</span></td></tr>
+          <tr><td>Vésicules en bouquet</td><td>Récidivant, lèvres/génital, picotement prodromique</td><td class="col-dx">Herpès simplex</td><td><span class="tag tag-classic">Classique</span></td></tr>
+          <tr><td>Vésicules</td><td>Polymorphisme + tronc + fièvre</td><td class="col-dx">Varicelle</td><td><span class="tag tag-classic">Classique</span></td></tr>
+          <tr><td>Vésicules</td><td>Faces latérales doigts, prurit, récidive</td><td class="col-dx">Dyshidrose</td><td><span class="tag tag-frequent">Fréquent</span></td></tr>
+          <tr><td>Vésicules + papules</td><td>Faces d'extension, prurit majeur, excoriations</td><td class="col-dx">Dermatite herpétiforme</td><td><span class="tag tag-rare">Rare</span></td></tr>
+          <tr><td>Bulles tendues</td><td>Sujet âgé, prurit, Nikolsky négatif</td><td class="col-dx">Pemphigoïde bulleuse</td><td><span class="tag tag-classic">Classique</span></td></tr>
+          <tr><td>Bulles flasques</td><td>Érosions muqueuses, Nikolsky positif</td><td class="col-dx">Pemphigus vulgaire</td><td><span class="tag tag-frequent">Fréquent</span></td></tr>
+          <tr><td>Bulles + cocardes</td><td>Médicament récent, atteinte muqueuse, fièvre</td><td class="col-dx">SJS / NET</td><td><span class="tag tag-urgent">Urgence</span></td></tr>
+          <tr><td>Plaque érythémato-squameuse</td><td>Squames argentées, faces d'extension, Auspitz</td><td class="col-dx">Psoriasis</td><td><span class="tag tag-classic">Classique</span></td></tr>
+          <tr><td>Plaque érythémato-squameuse</td><td>Plis, prurit, suintement, terrain atopique</td><td class="col-dx">Eczéma</td><td><span class="tag tag-classic">Classique</span></td></tr>
+          <tr><td>Plaque annulaire</td><td>Bordure vésiculo-squameuse active, asymétrique</td><td class="col-dx">Dermatophytose</td><td><span class="tag tag-classic">Classique</span></td></tr>
+          <tr><td>Plaque annulaire</td><td>Photo-distribuée, sub-aiguë, sans cicatrice</td><td class="col-dx">Lupus subaigu</td><td><span class="tag tag-frequent">Fréquent</span></td></tr>
+          <tr><td>Médaillon initial</td><td>Suivi d'éruption en sapin, tronc</td><td class="col-dx">Pityriasis rosé de Gibert</td><td><span class="tag tag-classic">Classique</span></td></tr>
+          <tr><td>Macules chamois</td><td>Tronc, signe du copeau, étés / sueur</td><td class="col-dx">Pityriasis versicolor</td><td><span class="tag tag-frequent">Fréquent</span></td></tr>
+          <tr><td>Papules violines polygonales</td><td>Stries de Wickham, poignets, lombes, muqueuse buccale</td><td class="col-dx">Lichen plan</td><td><span class="tag tag-frequent">Fréquent</span></td></tr>
+          <tr><td>Papules + sillons</td><td>Espaces interdigitaux, prurit nocturne, contagion familiale</td><td class="col-dx">Gale</td><td><span class="tag tag-classic">Classique</span></td></tr>
+          <tr><td>Papules urticariennes fugaces</td><td>Mobiles, prurit, < 24 h sur une zone</td><td class="col-dx">Urticaire</td><td><span class="tag tag-classic">Classique</span></td></tr>
+          <tr><td>Papules urticariennes fixes</td><td>> 24 h, brûlure, séquelles pigmentées</td><td class="col-dx">Vasculite urticarienne</td><td><span class="tag tag-rare">Rare</span></td></tr>
+          <tr><td>Œdème lèvres / glotte</td><td>Sans urticaire, sans prurit, IEC ou C1-inh ↓</td><td class="col-dx">Angio-œdème bradykinique</td><td><span class="tag tag-urgent">Urgence</span></td></tr>
+          <tr><td>Pustules folliculaires</td><td>+ comédons, adolescent</td><td class="col-dx">Acné</td><td><span class="tag tag-classic">Classique</span></td></tr>
+          <tr><td>Pustules amicrobiennes</td><td>Plaques psoriasiformes + fièvre</td><td class="col-dx">Psoriasis pustuleux</td><td><span class="tag tag-urgent">Urgence</span></td></tr>
+          <tr><td>Pustules diffuses</td><td>Fébriles, médicament récent, plis</td><td class="col-dx">PEAG / AGEP</td><td><span class="tag tag-urgent">Urgence</span></td></tr>
+          <tr><td>Purpura plat</td><td>Pétéchies + atteinte muqueuse</td><td class="col-dx">Thrombopénie</td><td><span class="tag tag-frequent">Fréquent</span></td></tr>
+          <tr><td>Purpura infiltré</td><td>Membres inférieurs, déclive, polymorphe</td><td class="col-dx">Vasculite leucocytoclasique</td><td><span class="tag tag-classic">Classique</span></td></tr>
+          <tr><td>Purpura nécrotique étoilé</td><td>Fièvre + choc + extension rapide</td><td class="col-dx">Purpura fulminans</td><td><span class="tag tag-urgent">Urgence vitale</span></td></tr>
+          <tr><td>Nodules</td><td>Faces antérieures jambes, douloureux, fugaces</td><td class="col-dx">Érythème noueux</td><td><span class="tag tag-classic">Classique</span></td></tr>
+          <tr><td>Nodule perlé</td><td>Télangiectasies, photo-exposé, sujet âgé</td><td class="col-dx">Carcinome basocellulaire</td><td><span class="tag tag-classic">Classique</span></td></tr>
+          <tr><td>Squames + érythème</td><td>Visage médian, sourcils, sillons nasogéniens, gras</td><td class="col-dx">Dermite séborrhéique</td><td><span class="tag tag-frequent">Fréquent</span></td></tr>
+          <tr><td>Comédons</td><td>+ pustules + kystes, visage/dos</td><td class="col-dx">Acné</td><td><span class="tag tag-classic">Classique</span></td></tr>
+          <tr><td>Télangiectasies + érythème</td><td>Centro-facial, papulo-pustules sans comédon</td><td class="col-dx">Rosacée</td><td><span class="tag tag-classic">Classique</span></td></tr>
+          <tr><td>Sclérose en plaque</td><td>Halo lilas périphérique, ivoire centrale</td><td class="col-dx">Morphée</td><td><span class="tag tag-frequent">Fréquent</span></td></tr>
+          <tr><td>Plaques achromiques annulaires</td><td>Acromion, faces dorsales mains, péribuccale</td><td class="col-dx">Vitiligo</td><td><span class="tag tag-classic">Classique</span></td></tr>
+          <tr><td>Toxidermie maculo-papuleuse</td><td>Médicament 5–14 j avant, tronc → membres</td><td class="col-dx">Exanthème médicamenteux</td><td><span class="tag tag-frequent">Fréquent</span></td></tr>
+          <tr><td>Toxidermie + fièvre + ADP</td><td>Hyperéosinophilie, atteinte hépatique, médicament 2–8 sem</td><td class="col-dx">DRESS</td><td><span class="tag tag-urgent">Urgence</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ════════════════ PIÈGES ════════════════ -->
+    <section id="pitfalls">
+      <h2><span class="num">05</span>Pièges & urgences à ne jamais manquer</h2>
+
+      <div class="pitfalls">
+        <h3>Les huit signaux d'alarme</h3>
+
+        <div class="pitfall-item">
+          <span class="pitfall-title">Toute toxidermie fébrile</span>
+          Avant de banaliser, éliminer DRESS, SJS/NET, AGEP. Hospitalisation et arrêt du médicament suspect en règle.
+        </div>
+
+        <div class="pitfall-item">
+          <span class="pitfall-title">Bulles + Nikolsky positif + atteinte muqueuse</span>
+          Urgence diagnostique : NET, pemphigus vulgaire, SSSS chez l'enfant. Surface décollable = pronostic.
+        </div>
+
+        <div class="pitfall-item">
+          <span class="pitfall-title">Purpura nécrotique extensif fébrile</span>
+          Purpura fulminans → antibiothérapie immédiate (ceftriaxone IV) avant tout transfert ; suspicion de méningococcémie.
+        </div>
+
+        <div class="pitfall-item">
+          <span class="pitfall-title">Érythrodermie</span>
+          Toujours hospitaliser : risques hydroélectriques, infectieux, hémodynamiques. Bilan systématique d'étiologie.
+        </div>
+
+        <div class="pitfall-item">
+          <span class="pitfall-title">Mélanome déguisé</span>
+          Règle ABCDE + signe du <em>vilain petit canard</em>. Mélanome nodulaire = piège (pas de phase de croissance horizontale).
+        </div>
+
+        <div class="pitfall-item">
+          <span class="pitfall-title">Œdème lingual / glottique sans prurit</span>
+          Suspecter angio-œdème bradykinique (IEC, déficit C1-inh). Adrénaline inefficace. Traitement spécifique = icatibant ou C1-inh.
+        </div>
+
+        <div class="pitfall-item">
+          <span class="pitfall-title">Plaque érythémato-squameuse chronique résistante du tronc</span>
+          Surtout chez l'adulte. Penser mycosis fongoïde — biopsies cutanées multiples + bilan d'extension si doute.
+        </div>
+
+        <div class="pitfall-item">
+          <span class="pitfall-title">Vésicules métamériques en V1 + atteinte aile du nez (signe de Hutchinson)</span>
+          Zona ophtalmique avec atteinte du nasociliaire = consultation ophtalmo en urgence (kératite, uvéite).
+        </div>
+      </div>
+
+      <h3 style="margin-top: 3rem;">Chez l'allergologue : trois reflexes spécifiques</h3>
+
+      <div class="pitfalls" style="background: linear-gradient(to bottom right, #f0f0e8, #faf7f2); border-color: #d8d8c8;">
+        <div class="pitfall-item" style="padding-left: 0;">
+          <span class="pitfall-title" style="color: var(--burgundy);">Devant toute « allergie médicamenteuse »</span>
+          Décrire la <em>sémiologie</em> (urticaire vraie ? exanthème maculo-papuleux ? toxidermie sévère ?) plutôt que de coder « allergie médicamenteuse » globalement. Conditionne la possibilité d'un test ultérieur.
+        </div>
+
+        <div class="pitfall-item" style="padding-left: 0;">
+          <span class="pitfall-title" style="color: var(--burgundy);">Devant un eczéma chronique</span>
+          Distinguer eczéma atopique (plis, terrain) vs eczéma de contact allergique (limites nettes, topographie évocatrice) → patch-tests si suspicion. Eczéma protéinique chez les manipulateurs alimentaires.
+        </div>
+
+        <div class="pitfall-item" style="padding-left: 0;">
+          <span class="pitfall-title" style="color: var(--burgundy);">Devant un angio-œdème isolé récidivant</span>
+          C1-inh (antigénique + fonctionnel) + C4 systématique. Le délai diagnostique moyen de l'AOH dépasse 10 ans en France.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Document de travail à visée pédagogique — fondé sur les référentiels CEDEF et la pratique courante en dermatologie générale. Toute aide diagnostique doit s'articuler avec l'examen clinique complet et, si nécessaire, l'examen anatomopathologique. Yanis Bendjelal, 2026.
+    </footer>
+
+  </main>
+</div>
+
+<script>
+  // Smooth highlight on nav active section
+  const sections = document.querySelectorAll('section[id], div[id="prelim"]');
+  const navLinks = document.querySelectorAll('.nav-list a');
+
+  function setActive() {
+    let current = '';
+    sections.forEach(s => {
+      const top = s.getBoundingClientRect().top;
+      if (top < 150) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.style.color = '';
+      a.style.fontWeight = '';
+      if (a.getAttribute('href') === '#' + current) {
+        a.style.color = 'var(--burgundy)';
+        a.style.fontWeight = '600';
+      }
+    });
+  }
+
+  window.addEventListener('scroll', setActive);
+  setActive();
+</script>
+
+</body>
+</html>
