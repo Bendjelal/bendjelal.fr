@@ -3,7 +3,7 @@ layout: about
 title: Accueil
 permalink: /
 subtitle: >
-  Médecin Allergologue · Chercheur · SFA · EAACI
+  Interne en Allergologie · Chercheur · SFA · EAACI
 
 profile:
   align: right
