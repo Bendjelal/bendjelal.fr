@@ -187,7 +187,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%62%65%6E%64%6A%65%6C%61%6C.%79%61%6E%69%73@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+          window.open("mailto:%79%61%6E%69%73.%62%65%6E%64%6A%65%6C%61%6C@%61%70%68%70.%66%72", "_blank");
         },
       },{
         id: 'social-linkedin',
@@ -195,6 +195,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/yanis-bendjelal", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
         },
       },{
       id: 'light-theme',
