@@ -15,7 +15,7 @@ selected_papers: true
 social: true
 ---
 
-Interne en Allergologie à l'AP-HP, je me consacre
+Interne en Allergologie à l'AP-HP inscrit à Sorbonne Université, je me consacre
 à la compréhension et au traitement des maladies allergiques, avec un
 intérêt particulier pour l'intelligence artificielle et l'analyse de
 données appliquées à la clinique.
@@ -30,10 +30,7 @@ plus fondamental : la structure des molécules.
 
 L'allergologie clinique génère des données riches et diverses — informations cliniques, tests cutanés, dosages d'IgE, etc —, ce qui en fait un terrain idéal pour l'analyse de données. Je travaille actuellement au développement de pipelines pour exploiter ces données à grande échelle. Mes précédents travaux ont été publiés dans _Cell_ et _Nature Communications_.
 
-Je suis membre du groupe de travail "Données et Intelligence Artificielle" de
-la Société Française d'Allergologie (SFA), et membre junior de
-la taskforce "Angioedema in Pregnancy" de l’EAACI.
-
-Je suis actuellement disponible pour des collaborations scientifiques.
+Je suis membre des groupes "Données et Intelligence Artificielle" de
+la Société Française d'Allergologie (SFA) et "Artificial Intelligence and Allergy" de l'Académie Européenne d'Allergie et Immunologie Clinique (EAACI).
 
 [Disponible pour des collaborations scientifiques, des interventions ou des échanges avec les médias. → Page Médias & Contact/contact/)]: #
