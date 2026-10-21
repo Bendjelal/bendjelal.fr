@@ -30,7 +30,7 @@ plus fondamental : la structure des molécules.
 
 L'allergologie clinique génère des données riches et diverses — informations cliniques, tests cutanés, dosages d'IgE, etc —, ce qui en fait un terrain idéal pour l'analyse de données. Je travaille actuellement au développement de pipelines pour exploiter ces données à grande échelle. Mes précédents travaux ont été publiés dans _Cell_ et _Nature Communications_.
 
-Je suis membre des groupes "Données et Intelligence Artificielle" de
+Je suis membre des groupes "E-Santé et Intelligence Artificielle" de
 la Société Française d'Allergologie (SFA) et "Artificial Intelligence and Allergy" de l'Académie Européenne d'Allergie et Immunologie Clinique (EAACI).
 
 [Disponible pour des collaborations scientifiques, des interventions ou des échanges avec les médias. → Page Médias & Contact/contact/)]: #
